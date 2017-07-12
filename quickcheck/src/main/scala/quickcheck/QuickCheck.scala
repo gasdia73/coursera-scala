@@ -22,7 +22,7 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
   implicit lazy val arbHeap: Arbitrary[H] = Arbitrary(genHeap)
 
 
-  property("gen3333") = forAll { (a: Int, b:Int) =>
+  property("gen test git push") = forAll { (a: Int, b:Int) =>
     val h = insert(b, insert(a, empty))
     val bigger = findMin(h)
     val smaller = findMin(deleteMin(h))
