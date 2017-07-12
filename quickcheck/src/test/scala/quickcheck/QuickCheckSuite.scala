@@ -25,24 +25,24 @@ class QuickCheckSuite extends FunSuite with Checkers {
   test("Binomial heap satisfies properties.") {
     check(new QuickCheckHeap with quickcheck.test.BinomialHeap)
   }
-//
-//  test("Bogus (1) binomial heap does not satisfy properties.") {
-//    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus1BinomialHeap)
-//  }
-//
-//  test("Bogus (2) binomial heap does not satisfy properties.") {
-//    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus2BinomialHeap)
-//  }
-//
-//  test("Bogus (3) binomial heap does not satisfy properties.") {
-//    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus3BinomialHeap)
-//  }
-//
-//  test("Bogus (4) binomial heap does not satisfy properties.") {
-//    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus4BinomialHeap)
-//  }
-//
-//  test("Bogus (5) binomial heap does not satisfy properties.") {
-//    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus5BinomialHeap)
-//  }
+
+  test("Bogus (1) binomial heap does not satisfy properties.") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus1BinomialHeap)
+  }
+
+  test("Bogus (2) binomial heap does not satisfy properties.") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus2BinomialHeap)
+  }
+
+  test("Bogus (3) binomial heap does not satisfy properties.") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus3BinomialHeap)
+  }
+
+  test("Bogus (4) binomial heap does not satisfy properties.") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus4BinomialHeap)
+  }
+
+  test("Bogus (5) binomial heap does not satisfy properties.") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus5BinomialHeap)
+  }
 }
